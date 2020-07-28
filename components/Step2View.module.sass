@@ -1,0 +1,136 @@
+.step2Button
+  position: absolute
+  bottom: 2rem
+  right: 3rem
+  height: 2.5rem
+  display: flex
+  justify-content: center
+  align-items: center
+  border-radius: 0.5rem
+  background: linear-gradient(144.73deg, #3177FF 7.02%, #9634E2 96.8%)
+  box-shadow: 0 0.25rem 0.5rem rgba(35, 24, 82, 0.2)
+  color: white
+  padding: 0 3rem
+
+.step2BackButton
+  position: absolute
+  bottom: 2rem
+  left: 3rem
+  height: 2.5rem
+  display: flex
+  justify-content: center
+  align-items: center
+  color: black
+  background: #FFFFFF;
+  box-shadow: 0 0.25rem 0.5rem rgba(35, 24, 82, 0.2)
+  border-radius: 0.5rem;
+  padding: 0 3rem
+  .backImg
+    margin-right: 1rem
+
+.step2Inner
+  display: grid
+  grid-template-columns: 1.5fr 1fr
+  grid-gap: 2rem
+  padding: 0 3rem
+  min-height: 350px
+  width: 100%
+  margin-bottom: 5rem
+  .nameLabel, .descriptionLabel, .logoLabel
+    color: #8F82B9
+    margin: 1rem 0
+    margin-bottom: 1rem
+    width: 100%
+  .nameInput, .descriptionInput
+    margin: 0
+    width: 100%
+    padding: 1rem
+    font-size: 1rem
+    background: #FFFFFF;
+    border: 2px solid #EAE7F4;
+    border-radius: 6px;
+    &:focus
+      border: 2px solid #8F82B9;
+      outline: none
+
+.textSection
+  display: flex
+  width: 100%
+  height: 100%
+  flex-direction: column
+  align-items: stretch
+
+.descriptionInput
+  flex: 1
+
+.logoSection
+  display: flex
+  width: 100%
+  height: 100%
+  flex-direction: column
+  align-items: stretch
+
+.logoInput
+  flex: 1
+  display: flex
+  width: 100%
+  height: 100%
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  padding: 2rem
+  background: #FFFFFF;
+  border: 2px solid #EAE7F4;
+  border-radius: 6px;
+
+.logoContainer
+  background: #FFFFFF
+  border-radius: 50%
+  background: #FFFFFF;
+  border: 2px solid #EAE7F4;
+  overflow: hidden
+  width: 9rem
+  height: 9rem
+  display: flex
+  justify-content: center
+  align-items: center
+  .logoImg
+    width: 75%
+    height: 75%
+
+.logoUploadButton
+  margin-top: 1rem
+  height: 2.5rem
+  display: flex
+  justify-content: center
+  cursor: pointer
+  align-items: center
+  color: black
+  background: #FFFFFF;
+  box-shadow: 0px 4px 9px rgba(71, 42, 166, 0.17);
+  border-radius: 0.5rem;
+  padding: 0 2rem
+
+.cardInner
+  background: white
+  margin-top: 8rem
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  height: calc(100% - 8rem)
+  width: 100%
+  padding: 2rem 0
+  position: relative
+
+@media (max-width: 40rem)
+  .step2Inner
+    grid-template-columns: 1fr
+    grid-gap: 0
+    padding: 0 2rem
+  .step2Button
+    right: 2rem
+    padding: 0 2rem
+  .step2BackButton
+    left: 2rem
+    padding: 0 2rem
